@@ -315,7 +315,7 @@ func (b *builder) compute() *DAG {
 		for _, rule := range rules {
 			host := rule.Host
 			if host == "" {
-				host = "*"
+				host = "default-backend.kirkcloud.com"
 			}
 			for _, httppath := range httppaths(rule) {
 				prefix := httppath.Path
