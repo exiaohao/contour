@@ -43,6 +43,7 @@ var ingressrouteRootNamespaceFlag string
 
 func main() {
 	log := logrus.StandardLogger()
+	log.Println("Contour v0.8-patch-star-domain")
 	app := kingpin.New("contour", "Heptio Contour Kubernetes ingress controller.")
 	bootstrap := app.Command("bootstrap", "Generate bootstrap configuration.")
 
